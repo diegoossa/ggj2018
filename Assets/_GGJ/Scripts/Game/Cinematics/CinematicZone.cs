@@ -6,6 +6,9 @@ public class CinematicZone : MonoBehaviour
     [SerializeField]
     private bool cinematicFinished;
 
+    [SerializeField]
+    private ActionZone actionZone;
+
     private PlayableDirector cinematicDirector;
     private bool onTrigger;
 
