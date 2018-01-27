@@ -1,18 +1,18 @@
 fileFormatVersion: 2
-guid: d5750f42be303ca4fa14802079512e58
-timeCreated: 1517080035
+guid: 58b38c8403104904f8f4888a909e4736
+timeCreated: 1517093759
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: torre_1
+    100000: prop1
     100002: //RootNode
-    400000: torre_1
+    400000: prop1
     400002: //RootNode
     2100000: palette
-    2300000: torre_1
-    3300000: torre_1
-    4300000: torre_1
+    2300000: prop1
+    3300000: prop1
+    4300000: prop1
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -43,7 +43,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.4
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
