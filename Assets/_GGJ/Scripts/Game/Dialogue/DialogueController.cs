@@ -1,39 +1,63 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueBox : Singleton<DialogueBox>
+public class DialogueController : Singleton<DialogueController>
 {
-    public string dialogue;
-    public float characterSpeed = 0.05f;
-    public GameObject closeOption;
-    public CanvasGroup canvasGroup;
-
+    [SerializeField]
+    private float characterSpeed = 0.05f;
+    [Header("Dialogue")]
+    [SerializeField]
+    private GameObject dialogueObject;
+    [SerializeField]
     private Text dialogueText;
-    private bool completed;
-    private bool closePosible;    
+    [SerializeField]
+    public GameObject closeOption;
+    [Header("Comments")]
+    [SerializeField]
+    private GameObject commentObject;
+    [SerializeField]
+    private Text commentText;
 
-    private void Awake()
-    {
-        dialogueText = GetComponent<Text>();
-        canvasGroup.alpha = 0;
-        closeOption.SetActive(false);
-    }
+    private string dialogue;
+    private bool completed;
+    private bool closePosible;
 
     private void Start()
     {
+        closeOption.SetActive(false);
+        dialogueObject.SetActive(false);
+        commentObject.SetActive(false);
         //Testing
         ShowDialogue("Hola como estás?? \nOhh que bien!");
+        //ShowComment("Hola como estás?? \nOhh que bien!");
     }
 
     public void ShowDialogue(string text)
     {
-        canvasGroup.alpha = 1;
+        dialogueObject.SetActive(true);
         completed = false;
         closePosible = false;
         dialogue = text;
         StartCoroutine(ShowDialogueCoroutine());
+    }
+
+    public void ShowComment(string text)
+    {
+        commentObject.SetActive(true);
+        StartCoroutine(ShowCommentCoroutine(text));
+    }
+
+    private IEnumerator ShowCommentCoroutine(string text)
+    {
+        commentText.text = "";
+        for (int i = 0; i < text.Length; i++)
+        {
+            commentText.text += text[i];
+            yield return new WaitForSeconds(characterSpeed);
+        }
+        yield return new WaitForSeconds(1f);
+        commentObject.SetActive(false);
     }
 
     private void Update()
@@ -42,14 +66,14 @@ public class DialogueBox : Singleton<DialogueBox>
         {
             if (closePosible)
             {
-                canvasGroup.alpha = 0;
+                dialogueObject.SetActive(false);
                 closeOption.SetActive(false);
             }
-            else if(!completed)
+            else if (!completed)
             {
                 ShowDialogue();
             }
-            
+
         }
     }
 
