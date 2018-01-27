@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 [RequireComponent(typeof(GravityBody))]
 public class RobotController : MonoBehaviour
 {
     public float walkSpeed = 6;
-    public float jumpForce = 220;
+    //public float jumpForce = 220;
     public LayerMask groundedMask;
 
     // System vars
@@ -15,7 +14,6 @@ public class RobotController : MonoBehaviour
     private float verticalLookRotation;
     private Transform cameraTransform;
     private Rigidbody rigidbody;
-
 
     private void Awake()
     {
@@ -33,13 +31,13 @@ public class RobotController : MonoBehaviour
         moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMoveVelocity, .15f);
 
         // Jump
-        if (Input.GetButtonDown("Jump"))
-        {
-            if (grounded)
-            {
-                rigidbody.AddForce(transform.up * jumpForce);
-            }
-        }
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    if (grounded)
+        //    {
+        //        rigidbody.AddForce(transform.up * jumpForce);
+        //    }
+        //}
 
         // Grounded check
         Ray ray = new Ray(transform.position, -transform.up);
