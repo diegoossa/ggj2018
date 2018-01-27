@@ -4,6 +4,7 @@
 public class RobotController : MonoBehaviour
 {
     public float walkSpeed = 6;
+    public float rotateSpeed = 45f;
     //public float jumpForce = 220;
     public LayerMask groundedMask;
 
@@ -26,18 +27,11 @@ public class RobotController : MonoBehaviour
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = Input.GetAxisRaw("Vertical");
 
-        Vector3 moveDir = new Vector3(inputX, 0, inputY).normalized;
+        Vector3 moveDir = Vector3.forward * inputY; //new Vector3(inputX, 0, inputY).normalized;
         Vector3 targetMoveAmount = moveDir * walkSpeed;
         moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMoveVelocity, .15f);
 
-        // Jump
-        //if (Input.GetButtonDown("Jump"))
-        //{
-        //    if (grounded)
-        //    {
-        //        rigidbody.AddForce(transform.up * jumpForce);
-        //    }
-        //}
+        transform.Rotate(0.0f, inputX * rotateSpeed * Time.deltaTime, 0.0f);
 
         // Grounded check
         Ray ray = new Ray(transform.position, -transform.up);

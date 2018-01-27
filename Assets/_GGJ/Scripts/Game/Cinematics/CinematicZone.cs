@@ -9,6 +9,8 @@ public class CinematicZone : MonoBehaviour
     [SerializeField]
     private ActionZone actionZone;
 
+    [SerializeField] private Transform interactionPosition;
+
     private PlayableDirector cinematicDirector;
     private bool onTrigger;
 
@@ -46,6 +48,9 @@ public class CinematicZone : MonoBehaviour
 
     private void ShowCinematic()
     {
-        cinematicDirector.Play();
+        if (interactionPosition)
+
+
+            cinematicDirector.Play();
     }
 }

@@ -29,8 +29,8 @@ public class DialogueController : Singleton<DialogueController>
         dialogueObject.SetActive(false);
         commentObject.SetActive(false);
         //Testing
-        ShowDialogue("Hola como estás?? \nOhh que bien!");
-        //ShowComment("Hola como estás?? \nOhh que bien!");
+        //ShowDialogue("Hola como estás?? \nOhh que bien!");
+        ShowComment("Hola como estás?? \nOhh que bien!");
     }
 
     public void ShowDialogue(string text)
