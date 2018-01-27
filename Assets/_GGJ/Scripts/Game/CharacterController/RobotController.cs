@@ -7,6 +7,7 @@ public class RobotController : MonoBehaviour
     public float rotateSpeed = 45f;
     //public float jumpForce = 220;
     public LayerMask groundedMask;
+    public bool canMove = true;
 
     // System vars
     private bool grounded;
@@ -23,6 +24,9 @@ public class RobotController : MonoBehaviour
 
     private void Update()
     {
+        if (!canMove)
+            return;
+
         // Calculate movement:
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = Input.GetAxisRaw("Vertical");
@@ -50,6 +54,9 @@ public class RobotController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!canMove)
+            return;
+
         // Apply movement to rigidbody
         Vector3 localMove = transform.TransformDirection(moveAmount) * Time.fixedDeltaTime;
         rigidbody.MovePosition(rigidbody.position + localMove);

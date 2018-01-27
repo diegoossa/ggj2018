@@ -4,6 +4,10 @@ using UnityEngine.UI;
 
 public class DialogueController : Singleton<DialogueController>
 {
+    [Header("Dialogue List")]
+    [SerializeField]
+    private DialogueList dialogues;
+    [Header("Dialogue Settings")]
     [SerializeField]
     private float characterSpeed = 0.05f;
     [Header("Dialogue")]
@@ -42,10 +46,55 @@ public class DialogueController : Singleton<DialogueController>
         StartCoroutine(ShowDialogueCoroutine());
     }
 
+    public void ShowDialogue(int id)
+    {
+        dialogueObject.SetActive(true);
+        completed = false;
+        closePosible = false;
+
+        switch (GameManager.Instance.currentLanguage)
+        {
+            case "English":
+                dialogue = dialogues.dialogues[id].englishDialogue;
+                break;
+            case "Spanish":
+                dialogue = dialogues.dialogues[id].spanishDialogue;
+                break;
+            case "Russian":
+                dialogue = dialogues.dialogues[id].russianDialogue;
+                break;
+            default:
+                dialogue = dialogues.dialogues[id].spanishDialogue;
+                break;
+        }
+
+        StartCoroutine(ShowDialogueCoroutine());
+    }
+
     public void ShowComment(string text)
     {
         commentObject.SetActive(true);
         StartCoroutine(ShowCommentCoroutine(text));
+    }
+
+    public void ShowComment(int id)
+    {
+        commentObject.SetActive(true);
+        switch (GameManager.Instance.currentLanguage)
+        {
+            case "English":
+                StartCoroutine(ShowCommentCoroutine(dialogues.dialogues[id].englishDialogue));
+                break;
+            case "Spanish":
+                StartCoroutine(ShowCommentCoroutine(dialogues.dialogues[id].spanishDialogue));
+                break;
+            case "Russian":
+                StartCoroutine(ShowCommentCoroutine(dialogues.dialogues[id].russianDialogue));
+                break;
+            default:
+                StartCoroutine(ShowCommentCoroutine(dialogues.dialogues[id].spanishDialogue));
+                break;
+        }
     }
 
     private IEnumerator ShowCommentCoroutine(string text)

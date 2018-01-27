@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    public string currentLanguage;
+    public string currentLanguage = Languages.SPANISH;
     public Transform player;
 
 

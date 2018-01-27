@@ -53,6 +53,8 @@ public class CinematicZone : MonoBehaviour
 
     private void ShowCinematic()
     {
+        player.GetComponent<RobotController>().canMove = false;
+
         if (interactionPosition)
         {
             player.DOMove(interactionPosition.position, 1);

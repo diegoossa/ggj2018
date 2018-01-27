@@ -222,11 +222,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f49866fb4a65fc4084e071be4503b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 6
+  walkSpeed: 10
   rotateSpeed: 60
   groundedMask:
     serializedVersion: 2
     m_Bits: 256
+  canMove: 1
 --- !u!114 &114512181480822274
 MonoBehaviour:
   m_ObjectHideFlags: 1
