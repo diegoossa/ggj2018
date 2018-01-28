@@ -2,7 +2,7 @@
 
 public abstract class ActionZone : MonoBehaviour
 {
-    public RobotController player;
+    protected RobotController player;
 
     public abstract void ActivateZone();
 

@@ -13,22 +13,82 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - id: 0
+    englishDialogue: "System: Protocolo de Iniciaci\xF3n activado."
+    spanishDialogue: "SISTEMA: Protocolo de Iniciaci\xF3n activado."
+    russianDialogue: "System: Protocolo de Iniciaci\xF3n activado."
+  - id: 1
+    englishDialogue: 
+    spanishDialogue: 'SISTEMA: Cargando...'
+    russianDialogue: 
+  - id: 2
+    englishDialogue: 
+    spanishDialogue: "SISTEMA: Informaci\xF3n corrupta. Depurando."
+    russianDialogue: 
+  - id: 3
+    englishDialogue: 
+    spanishDialogue: 'SISTEMA: Protocolo Primordial activado.'
+    russianDialogue: 
+  - id: 4
+    englishDialogue: 
+    spanishDialogue: 'IMO_42: Huh...'
+    russianDialogue: 
+  - id: 0
+    englishDialogue: 
+    spanishDialogue: "IMO_42: \xBFQu\xE9 es este lugar?"
+    russianDialogue: 
+  - id: 5
+    englishDialogue: 
+    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    russianDialogue: 
+  - id: 6
+    englishDialogue: 
+    spanishDialogue: "SISTEMA: No hay informaci\xF3n."
+    russianDialogue: 
+  - id: 7
+    englishDialogue: 
+    spanishDialogue: "IMO_42: Ser\xE1 mejor que escanee el lugar."
+    russianDialogue: 
+  - id: 8
+    englishDialogue: 
+    spanishDialogue: 'IMO_42: Estoy atrapado. Necesito encontrar la manera de salir.'
+    russianDialogue: 
+  - id: 9
     englishDialogue: 
     spanishDialogue: 
     russianDialogue: 
   - id: 0
     englishDialogue: 
-    spanishDialogue: 
+    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
     russianDialogue: 
   - id: 0
     englishDialogue: 
-    spanishDialogue: 
+    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
     russianDialogue: 
   - id: 0
     englishDialogue: 
-    spanishDialogue: 
+    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
     russianDialogue: 
   - id: 0
     englishDialogue: 
-    spanishDialogue: 
+    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    russianDialogue: 
+  - id: 0
+    englishDialogue: 
+    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    russianDialogue: 
+  - id: 0
+    englishDialogue: 
+    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    russianDialogue: 
+  - id: 0
+    englishDialogue: 
+    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    russianDialogue: 
+  - id: 0
+    englishDialogue: 
+    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    russianDialogue: 
+  - id: 0
+    englishDialogue: 
+    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
     russianDialogue: 

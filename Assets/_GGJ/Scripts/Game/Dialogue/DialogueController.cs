@@ -24,6 +24,7 @@ public class DialogueController : Singleton<DialogueController>
     private Text commentText;
 
     private string dialogue;
+    private string comment;
     private bool completed;
     private bool closePosible;
 
@@ -32,9 +33,6 @@ public class DialogueController : Singleton<DialogueController>
         closeOption.SetActive(false);
         dialogueObject.SetActive(false);
         commentObject.SetActive(false);
-        //Testing
-        //ShowDialogue("Hola como estás?? \nOhh que bien!");
-        ShowComment("Hola como estás?? \nOhh que bien!");
     }
 
     public void ShowDialogue(string text)
@@ -48,6 +46,7 @@ public class DialogueController : Singleton<DialogueController>
 
     public void ShowDialogue(int id)
     {
+        dialogue = "";
         dialogueObject.SetActive(true);
         completed = false;
         closePosible = false;
@@ -74,38 +73,47 @@ public class DialogueController : Singleton<DialogueController>
     public void ShowComment(string text)
     {
         commentObject.SetActive(true);
-        StartCoroutine(ShowCommentCoroutine(text));
+        comment = text;
+        StartCoroutine(ShowCommentCoroutine());
     }
 
     public void ShowComment(int id)
     {
+        comment = "";
         commentObject.SetActive(true);
         switch (GameManager.Instance.currentLanguage)
         {
             case "English":
-                StartCoroutine(ShowCommentCoroutine(dialogues.dialogues[id].englishDialogue));
+                comment = dialogues.dialogues[id].englishDialogue;
                 break;
             case "Spanish":
-                StartCoroutine(ShowCommentCoroutine(dialogues.dialogues[id].spanishDialogue));
+                comment = dialogues.dialogues[id].spanishDialogue;
                 break;
             case "Russian":
-                StartCoroutine(ShowCommentCoroutine(dialogues.dialogues[id].russianDialogue));
+                comment = dialogues.dialogues[id].russianDialogue;
                 break;
             default:
-                StartCoroutine(ShowCommentCoroutine(dialogues.dialogues[id].spanishDialogue));
+                comment = dialogues.dialogues[id].spanishDialogue;
                 break;
         }
+
+        StartCoroutine(ShowCommentCoroutine());
     }
 
-    private IEnumerator ShowCommentCoroutine(string text)
+    private IEnumerator ShowCommentCoroutine()
     {
+        CancelInvoke("DeactiveComment");
         commentText.text = "";
-        for (int i = 0; i < text.Length; i++)
+        for (int i = 0; i < comment.Length; i++)
         {
-            commentText.text += text[i];
+            commentText.text += comment[i];
             yield return new WaitForSeconds(characterSpeed);
         }
-        yield return new WaitForSeconds(1f);
+        Invoke("DeactiveComment", 2f);
+    }
+
+    private void DeactiveComment()
+    {
         commentObject.SetActive(false);
     }
 
@@ -122,7 +130,6 @@ public class DialogueController : Singleton<DialogueController>
             {
                 ShowDialogue();
             }
-
         }
     }
 

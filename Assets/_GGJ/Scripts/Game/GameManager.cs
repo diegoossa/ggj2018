@@ -6,16 +6,21 @@ public class GameManager : Singleton<GameManager>
     public string currentLanguage = Languages.SPANISH;
     public Transform player;
 
+    private Camera mainCamera;
+    public Animator cameraAnimator;
 
-    private void Awake()
+
+    private void Start()
     {
+        mainCamera = Camera.main;
+        //cameraAnimator = mainCamera.GetComponent<Animator>();
+
         if (!player)
             player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Glitch()
     {
-
+        cameraAnimator.SetTrigger("Glitch");
     }
 }

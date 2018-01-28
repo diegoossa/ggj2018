@@ -8,6 +8,7 @@ public class RobotController : MonoBehaviour
     //public float jumpForce = 220;
     public LayerMask groundedMask;
     public bool canMove = true;
+    public Animator animator;
 
     // System vars
     private bool grounded;
@@ -15,11 +16,11 @@ public class RobotController : MonoBehaviour
     private Vector3 smoothMoveVelocity;
     private float verticalLookRotation;
     private Transform cameraTransform;
-    private Rigidbody rigidbody;
+    private Rigidbody rigidBody;
 
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rigidBody = GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -57,8 +58,8 @@ public class RobotController : MonoBehaviour
         if (!canMove)
             return;
 
-        // Apply movement to rigidbody
+        // Apply movement to rigidBody
         Vector3 localMove = transform.TransformDirection(moveAmount) * Time.fixedDeltaTime;
-        rigidbody.MovePosition(rigidbody.position + localMove);
+        rigidBody.MovePosition(rigidBody.position + localMove);
     }
 }

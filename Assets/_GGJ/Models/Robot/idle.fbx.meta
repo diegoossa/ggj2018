@@ -1,0 +1,318 @@
+fileFormatVersion: 2
+guid: 849f288c95cb1b14382612fa29d21253
+timeCreated: 1517113655
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: antena:antena
+    100002: brazo_der5:polySurface1
+    100004: cabeza2
+    100006: cabeza:cabeza
+    100008: group11
+    100010: //RootNode
+    100012: ojos:ojos
+    100014: pasted__pasted__polySurface5
+    100016: pasted__polySurface3
+    100018: pasted__polySurface4
+    100020: pCube1
+    100022: pCube2
+    100024: pCube3
+    100026: pierna_8:polySurface1
+    100028: polySurface1
+    100030: torso1:torso
+    400000: antena:antena
+    400002: brazo_der5:polySurface1
+    400004: cabeza2
+    400006: cabeza:cabeza
+    400008: group11
+    400010: //RootNode
+    400012: ojos:ojos
+    400014: pasted__pasted__polySurface5
+    400016: pasted__polySurface3
+    400018: pasted__polySurface4
+    400020: pCube1
+    400022: pCube2
+    400024: pCube3
+    400026: pierna_8:polySurface1
+    400028: polySurface1
+    400030: torso1:torso
+    2100000: pasted__negro
+    2100002: pasted__azulbotas
+    2100004: pasted__cafeoscuro
+    2100006: pasted__verdeclaro
+    2100008: pasted__verdeoscuro
+    2100010: lambert1
+    2100012: pasted__cafegris
+    2100014: pasted__pasted__negro
+    2100016: pasted__pasted__azulbotas
+    2100018: pasted__pasted__cafeoscuro
+    2100020: pasted__pasted__verdeclaro
+    2100022: pasted__pasted__verdeoscuro
+    2100024: pasted__pasted__cafegris
+    2100026: ojos_palette1
+    2100028: antena_palette1
+    2100030: cabeza_palette1
+    2100032: negro
+    2100034: cafeoscuro
+    2100036: verdeclaro
+    2100038: cafegris
+    2100040: cafemedio
+    2100042: verdeoscuro
+    2100044: torso1_palette1
+    2300000: antena:antena
+    2300002: brazo_der5:polySurface1
+    2300004: cabeza:cabeza
+    2300006: ojos:ojos
+    2300008: pasted__pasted__polySurface5
+    2300010: pasted__polySurface3
+    2300012: pasted__polySurface4
+    2300014: pCube1
+    2300016: pCube2
+    2300018: pCube3
+    2300020: pierna_8:polySurface1
+    2300022: polySurface1
+    2300024: torso1:torso
+    3300000: antena:antena
+    3300002: brazo_der5:polySurface1
+    3300004: cabeza:cabeza
+    3300006: ojos:ojos
+    3300008: pasted__pasted__polySurface5
+    3300010: pasted__polySurface3
+    3300012: pasted__polySurface4
+    3300014: pCube1
+    3300016: pCube2
+    3300018: pCube3
+    3300020: pierna_8:polySurface1
+    3300022: polySurface1
+    3300024: torso1:torso
+    4300000: pasted__polySurface3
+    4300002: pasted__polySurface4
+    4300004: pasted__pasted__polySurface5
+    4300006: pCube2
+    4300008: pCube3
+    4300010: pierna_8:polySurface1
+    4300012: pCube1
+    4300014: ojos:ojos
+    4300016: antena:antena
+    4300018: cabeza:cabeza
+    4300020: brazo_der5:polySurface1
+    4300022: torso1:torso
+    4300024: polySurface1
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: antena_palette1
+    second: {fileID: 2100000, guid: b280eaf84176f05498351129c7066ba2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cabeza_palette1
+    second: {fileID: 2100000, guid: b1cb1db81bd56f542b3601ddb848efb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cafegris
+    second: {fileID: 2100000, guid: 34687e1cebf95244f988a5ee45f28c65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cafemedio
+    second: {fileID: 2100000, guid: f49b6e409e0762e429b9d183a2e576e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cafeoscuro
+    second: {fileID: 2100000, guid: 4fcb18f890ecde140b818d0eaea75b29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 14ea7f4039fcae54890ee6ee5c662afe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: negro
+    second: {fileID: 2100000, guid: 8d4620ef1e59de64d8f748882d16413f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ojos_palette1
+    second: {fileID: 2100000, guid: 35e96940ce3a74a4485d61040345ed1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__azulbotas
+    second: {fileID: 2100000, guid: bb3da55180b0e2e4f8dbd9bb606780af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__cafegris
+    second: {fileID: 2100000, guid: 61433d6541fa9e945998fb3c6044cd3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__cafeoscuro
+    second: {fileID: 2100000, guid: c6d70df57478cac4e8fc0f688a398a4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__negro
+    second: {fileID: 2100000, guid: 36351c3b77ee26346b2589b3da69732d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__azulbotas
+    second: {fileID: 2100000, guid: 75df77a01ad8e8141ba694a658b8b0d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__cafegris
+    second: {fileID: 2100000, guid: ad94fb443da5f3b4b909293a9cc44fbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__cafeoscuro
+    second: {fileID: 2100000, guid: 4b053c561621a31489bbfe4e74b2d8e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__negro
+    second: {fileID: 2100000, guid: dc736b240899da146b67b4387133eff9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__verdeclaro
+    second: {fileID: 2100000, guid: a4650c3bd9815544793f98fd3deaf74c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__verdeoscuro
+    second: {fileID: 2100000, guid: 9f0916ff5f8916e45aecc26aaa09bee4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__verdeclaro
+    second: {fileID: 2100000, guid: 6f7ae16bd093c83409b5d05d6ff943f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__verdeoscuro
+    second: {fileID: 2100000, guid: 2a55dbc2d513f2f46bd9467f532cccd1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: torso1_palette1
+    second: {fileID: 2100000, guid: 8f1703599dc528744868caeef8ddde6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: verdeclaro
+    second: {fileID: 2100000, guid: 701213380c94d5a42b1a6ad219e07d78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: verdeoscuro
+    second: {fileID: 2100000, guid: e8cbe1661c9c57840acfe35240638896, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: antena
+    second: {fileID: 2800000, guid: 0bad5c6e221c9e94ea19030d7e2df4f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cabeza
+    second: {fileID: 2800000, guid: c63f22d9322d0c041a4612ff31b0ab2d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ojos
+    second: {fileID: 2800000, guid: bc2d4e2a68ece254085e78ff27ecf40f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: torso
+    second: {fileID: 2800000, guid: 9741b1df0c1333e448f67d6719c2fef9, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
