@@ -11,6 +11,8 @@ public class RobotController : MonoBehaviour
     public Animator animator;
     public GameObject map;
 
+    public AudioClip walk;
+
     // System vars
     private bool grounded;
     private Vector3 moveAmount;
@@ -18,10 +20,12 @@ public class RobotController : MonoBehaviour
     private float verticalLookRotation;
     private Transform cameraTransform;
     private Rigidbody rigidBody;
+    private AudioSource aSource;
 
     private void Awake()
     {
         rigidBody = GetComponent<Rigidbody>();
+        aSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -33,12 +37,21 @@ public class RobotController : MonoBehaviour
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = Input.GetAxisRaw("Vertical");
 
-        Vector3 moveDir = Vector3.forward * inputY; //new Vector3(inputX, 0, inputY).normalized;
+        Vector3 moveDir = Vector3.forward * inputY;
         Vector3 targetMoveAmount = moveDir * walkSpeed;
         moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMoveVelocity, .15f);
 
         if (animator)
             animator.SetFloat("Speed", Mathf.Abs(inputY));
+
+        if (Mathf.Abs(inputY) > 0.1f)
+        {
+            aSource.volume = 1;
+        }
+        else
+        {
+            aSource.volume = 0;
+        }
 
         transform.Rotate(0.0f, inputX * rotateSpeed * Time.deltaTime, 0.0f);
 

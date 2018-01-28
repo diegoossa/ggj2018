@@ -14,9 +14,28 @@ public class GameManager : Singleton<GameManager>
 
     public int towersActivated = 0;
 
+    public AudioSource musicSource;
+
+    public AudioClip Tower1;
+    public AudioClip Tower2;
+    public AudioClip Tower3;
+
     public void ActivateTower()
     {
         towersActivated++;
+
+        if (towersActivated == 1)
+        {
+            musicSource.clip = Tower1;
+        }
+        else if (towersActivated == 2)
+        {
+            musicSource.clip = Tower2;
+        }
+        else if (towersActivated == 3)
+        {
+            musicSource.clip = Tower3;
+        }
 
         if (towersActivated >= 3)
         {

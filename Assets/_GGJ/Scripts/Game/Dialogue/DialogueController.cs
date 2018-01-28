@@ -28,6 +28,8 @@ public class DialogueController : Singleton<DialogueController>
     private bool completed;
     private bool closePosible;
 
+    public AudioClip[] talks;
+
     private void Start()
     {
         closeOption.SetActive(false);
@@ -51,6 +53,8 @@ public class DialogueController : Singleton<DialogueController>
         completed = false;
         closePosible = false;
 
+        AudioSource.PlayClipAtPoint(talks[Random.Range(0, talks.Length)], Vector3.zero);
+
         switch (GameManager.Instance.currentLanguage)
         {
             case "English":
@@ -72,6 +76,8 @@ public class DialogueController : Singleton<DialogueController>
 
     public void ShowComment(string text)
     {
+        AudioSource.PlayClipAtPoint(talks[Random.Range(0, talks.Length)], Vector3.zero);
+
         commentObject.SetActive(true);
         comment = text;
         StartCoroutine(ShowCommentCoroutine());
@@ -79,6 +85,8 @@ public class DialogueController : Singleton<DialogueController>
 
     public void ShowComment(int id)
     {
+        AudioSource.PlayClipAtPoint(talks[Random.Range(0, talks.Length)], GameManager.Instance.player.position);
+
         comment = "";
         commentObject.SetActive(true);
         switch (GameManager.Instance.currentLanguage)

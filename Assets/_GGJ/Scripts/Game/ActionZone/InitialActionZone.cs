@@ -21,7 +21,7 @@ public class InitialActionZone : ActionZone
         yield return new WaitForSeconds(2f);
         GameManager.Instance.robot.animator.SetTrigger("Connect");
 
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(4f);
 
         for (int i = 0; i < gosToActivate.Length; i++)
             gosToActivate[i].SetActive(true);

@@ -4,7 +4,7 @@ public class ForceField : MonoBehaviour
 {
     [SerializeField] private GameObject sparks;
 
-    private bool dialogueShown = false;
+    //private bool dialogueShown = false;
 
     private void OnCollisionEnter(Collision other)
     {
@@ -13,11 +13,11 @@ public class ForceField : MonoBehaviour
             Instantiate(sparks, other.contacts[0].point, Quaternion.identity);
             GameManager.Instance.Glitch();
 
-            if (!dialogueShown)
-            {
-                DialogueController.Instance.ShowComment(9);
-                dialogueShown = true;
-            }
+            //if (!dialogueShown)
+            //{
+            //    DialogueController.Instance.ShowComment(9);
+            //    dialogueShown = true;
+            //}
         }
     }
 }
