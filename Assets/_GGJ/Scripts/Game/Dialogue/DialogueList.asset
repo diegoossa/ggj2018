@@ -56,39 +56,82 @@ MonoBehaviour:
     englishDialogue: 
     spanishDialogue: "Imo: Parece ser un mapa del\r lugar."
     russianDialogue: 
-  - id: 0
+  - id: 11
     englishDialogue: 
     spanishDialogue: "Imo: Hay tres \xE1reas marcadas."
     russianDialogue: 
-  - id: 0
+  - id: 12
     englishDialogue: 
-    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    spanishDialogue: "Sistema: Buscando vida org\xE1nica."
     russianDialogue: 
-  - id: 0
+  - id: 13
     englishDialogue: 
-    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    spanishDialogue: "Sistema: La b\xFAsqueda no arrojo\r resultados"
     russianDialogue: 
-  - id: 0
+  - id: 14
     englishDialogue: 
-    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    spanishDialogue: "Imo_42: Supongo que soy la \xFAnica\r\ncosa viva aqu\xED."
     russianDialogue: 
-  - id: 0
+  - id: 15
     englishDialogue: 
-    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    spanishDialogue: "Imo_42: Este debe ser unos de los\r lugares que indica el mapa.\r\nParece
+      estar desactivada."
     russianDialogue: 
-  - id: 0
+  - id: 16
     englishDialogue: 
-    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    spanishDialogue: "Imo_42: Supongo que esta es mi misi\xF3n, regresarle la vida
+      a este\r\nplaneta."
     russianDialogue: 
-  - id: 0
+  - id: 17
     englishDialogue: 
-    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    spanishDialogue: "Imo 42: Ya fui a estos tres\r lugares, \xBFahora qu\xE9?"
     russianDialogue: 
-  - id: 0
+  - id: 18
     englishDialogue: 
-    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    spanishDialogue: "Sistema: Informaci\xF3n depurada.\r Reproduciendo."
     russianDialogue: 
-  - id: 0
+  - id: 19
     englishDialogue: 
-    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    spanishDialogue: "Qetoks: Imo, soy el General\r\nQetoks, t\xFA creador."
+    russianDialogue: 
+  - id: 20
+    englishDialogue: 
+    spanishDialogue: "Qetoks: Espero que hayas logrado\r aterrizar sin complicaciones."
+    russianDialogue: 
+  - id: 21
+    englishDialogue: 
+    spanishDialogue: "Qetoks: El planeta en el que te\r encuentras tiene la capacidad
+      de\r\nde regenerarse con tan solo\r inicializar los dinamos que\r\nencontrar\xE1s
+      marcados en el mapa."
+    russianDialogue: 
+  - id: 22
+    englishDialogue: 
+    spanishDialogue: "Qetoks: Despu\xE9s de hacerlo, debes\r activar la antena y regresar
+      al\r\npuesto principal."
+    russianDialogue: 
+  - id: 23
+    englishDialogue: 
+    spanishDialogue: "Qetoks: Desde all\xED podr\xE1s\r transmitir la se\xF1al que
+      nos\r\npermitir\xE1 llegar al planeta y\r extraer toda su vida org\xE1nica."
+    russianDialogue: 
+  - id: 24
+    englishDialogue: 
+    spanishDialogue: "Qetoks: En tus manos est\xE1 el\r destino de toda nuestra raza."
+    russianDialogue: 
+  - id: 25
+    englishDialogue: 
+    spanishDialogue: 'Qetoks: No nos falles.'
+    russianDialogue: 
+  - id: 26
+    englishDialogue: 
+    spanishDialogue: 'Imo_42: ...'
+    russianDialogue: 
+  - id: 27
+    englishDialogue: 
+    spanishDialogue: "Imo_42: As\xED que esta era mi\r misi\xF3n desde el principio."
+    russianDialogue: 
+  - id: 28
+    englishDialogue: 
+    spanishDialogue: "Imo_42: No quiero destruir lo que\r he creado, pero, \xBFrealmente
+      puedo\r\ndesobedecer mis \xF3rdenes?"
     russianDialogue: 

@@ -46,8 +46,6 @@ public class CinematicZone : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             onTrigger = false;
-            //TODO: Transition to Follow Camera
-            //cinematicDirector.Play();
         }
     }
 
@@ -57,7 +55,7 @@ public class CinematicZone : MonoBehaviour
 
         if (interactionPosition)
         {
-            player.DOMove(interactionPosition.position, 1);
+            player.DOMove(new Vector3(interactionPosition.position.x, player.position.y, interactionPosition.position.z), 1);
             player.DORotate(interactionPosition.eulerAngles, 1);
         }
 

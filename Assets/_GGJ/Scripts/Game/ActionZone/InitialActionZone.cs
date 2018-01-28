@@ -17,7 +17,11 @@ public class InitialActionZone : ActionZone
     private IEnumerator ActivateZoneCoroutine()
     {
         Debug.Log("Initial Zone");
-        yield return new WaitForSeconds(5f);
+
+        yield return new WaitForSeconds(2f);
+        GameManager.Instance.robot.animator.SetTrigger("Connect");
+
+        yield return new WaitForSeconds(6f);
 
         for (int i = 0; i < gosToActivate.Length; i++)
             gosToActivate[i].SetActive(true);
@@ -25,7 +29,7 @@ public class InitialActionZone : ActionZone
         for (int i = 0; i < gosToDeactivate.Length; i++)
             gosToDeactivate[i].SetActive(false);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         DialogueController.Instance.ShowComment(10);
         yield return new WaitForSeconds(3f);
         DialogueController.Instance.ShowComment(11);

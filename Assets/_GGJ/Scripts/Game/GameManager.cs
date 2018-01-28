@@ -11,11 +11,30 @@ public class GameManager : Singleton<GameManager>
     private Camera mainCamera;
     public Animator cameraAnimator;
 
+    public int towersActivated = 0;
+
+    public void ActivateTower()
+    {
+        towersActivated++;
+
+        if (towersActivated >= 3)
+        {
+        }
+    }
 
     private void Start()
     {
         mainCamera = Camera.main;
         robot = player.GetComponent<RobotController>();
+
+        if (PlayerPrefs.HasKey("Language"))
+        {
+            currentLanguage = PlayerPrefs.GetString("Language");
+        }
+        else
+        {
+            currentLanguage = Languages.SPANISH;
+        }
         //cameraAnimator = mainCamera.GetComponent<Animator>();
 
         if (!player)
