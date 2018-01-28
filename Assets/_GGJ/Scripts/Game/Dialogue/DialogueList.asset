@@ -32,33 +32,33 @@ MonoBehaviour:
     englishDialogue: 
     spanishDialogue: 'IMO_42: Huh...'
     russianDialogue: 
-  - id: 0
+  - id: 5
     englishDialogue: 
     spanishDialogue: "IMO_42: \xBFQu\xE9 es este lugar?"
     russianDialogue: 
-  - id: 5
-    englishDialogue: 
-    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
-    russianDialogue: 
   - id: 6
     englishDialogue: 
-    spanishDialogue: "SISTEMA: No hay informaci\xF3n."
+    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
     russianDialogue: 
   - id: 7
     englishDialogue: 
-    spanishDialogue: "IMO_42: Ser\xE1 mejor que escanee el lugar."
+    spanishDialogue: "SISTEMA: No hay informaci\xF3n."
     russianDialogue: 
   - id: 8
     englishDialogue: 
-    spanishDialogue: 'IMO_42: Estoy atrapado. Necesito encontrar la manera de salir.'
+    spanishDialogue: "IMO_42: Ser\xE1 mejor que escanee el lugar."
     russianDialogue: 
   - id: 9
     englishDialogue: 
-    spanishDialogue: 
+    spanishDialogue: 'IMO_42: Estoy atrapado. Necesito encontrar la manera de salir.'
+    russianDialogue: 
+  - id: 10
+    englishDialogue: 
+    spanishDialogue: "Imo: Parece ser un mapa del\r lugar."
     russianDialogue: 
   - id: 0
     englishDialogue: 
-    spanishDialogue: "SISTEMA: Informe de misi\xF3n."
+    spanishDialogue: "Imo: Hay tres \xE1reas marcadas."
     russianDialogue: 
   - id: 0
     englishDialogue: 

@@ -4,13 +4,18 @@ using UnityEngine;
 public class PlayerComments : MonoBehaviour
 {
 
+    private RobotController robot;
+
     private void Start()
     {
+        robot = GetComponent<RobotController>();
         StartCoroutine(StartComments());
     }
 
     private IEnumerator StartComments()
     {
+        robot.canMove = false;
+
         yield return new WaitForSeconds(2f);
         DialogueController.Instance.ShowComment(0);
         yield return new WaitForSeconds(4f);
@@ -19,6 +24,7 @@ public class PlayerComments : MonoBehaviour
         DialogueController.Instance.ShowComment(2);
         yield return new WaitForSeconds(4f);
         DialogueController.Instance.ShowComment(3);
+        robot.canMove = true;
         yield return new WaitForSeconds(6f);
         DialogueController.Instance.ShowComment(4);
         yield return new WaitForSeconds(3f);

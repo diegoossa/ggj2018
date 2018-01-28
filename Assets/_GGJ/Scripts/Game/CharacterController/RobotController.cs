@@ -9,6 +9,7 @@ public class RobotController : MonoBehaviour
     public LayerMask groundedMask;
     public bool canMove = true;
     public Animator animator;
+    public GameObject map;
 
     // System vars
     private bool grounded;
@@ -36,6 +37,9 @@ public class RobotController : MonoBehaviour
         Vector3 targetMoveAmount = moveDir * walkSpeed;
         moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMoveVelocity, .15f);
 
+        if (animator)
+            animator.SetFloat("Speed", Mathf.Abs(inputY));
+
         transform.Rotate(0.0f, inputX * rotateSpeed * Time.deltaTime, 0.0f);
 
         // Grounded check
@@ -49,6 +53,17 @@ public class RobotController : MonoBehaviour
         else
         {
             grounded = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            if (!GameManager.Instance.canShowMap)
+                return;
+
+            if (map.activeSelf)
+                map.SetActive(false);
+            else
+                map.SetActive(true);
         }
 
     }
