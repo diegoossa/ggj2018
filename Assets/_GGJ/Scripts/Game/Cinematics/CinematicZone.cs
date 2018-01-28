@@ -18,6 +18,7 @@ public class CinematicZone : MonoBehaviour
     private PlayableDirector cinematicDirector;
     private bool onTrigger;
 
+
     private void Awake()
     {
         cinematicDirector = GetComponent<PlayableDirector>();
@@ -51,6 +52,8 @@ public class CinematicZone : MonoBehaviour
 
     private void ShowCinematic()
     {
+        GetComponent<BoxCollider>().enabled = false;
+
         player.GetComponent<RobotController>().canMove = false;
 
         if (interactionPosition)
