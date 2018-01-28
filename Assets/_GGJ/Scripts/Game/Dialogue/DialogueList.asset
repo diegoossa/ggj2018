@@ -13,125 +13,139 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - id: 0
-    englishDialogue: "System: Protocolo de Iniciaci\xF3n activado."
+    englishDialogue: 'System: Initiation Protocol activated'
     spanishDialogue: "SISTEMA: Protocolo de Iniciaci\xF3n activado."
-    russianDialogue: "System: Protocolo de Iniciaci\xF3n activado."
+    russianDialogue: 'Sistema: Protocollo di Iniziazione attivato.'
   - id: 1
-    englishDialogue: 
+    englishDialogue: "System: Loading\u2026"
     spanishDialogue: 'SISTEMA: Cargando...'
-    russianDialogue: 
+    russianDialogue: 'Sistema: Caricando....'
   - id: 2
-    englishDialogue: 
+    englishDialogue: 'System: Corrupt information. Initializing depuration process
+      0%'
     spanishDialogue: "SISTEMA: Informaci\xF3n corrupta. Depurando."
-    russianDialogue: 
+    russianDialogue: 'Sistema: informazioni corrotte. Inizio del processo di debugging
+      0%'
   - id: 3
-    englishDialogue: 
+    englishDialogue: 'System: Primordial Protocol activated.'
     spanishDialogue: 'SISTEMA: Protocolo Primordial activado.'
-    russianDialogue: 
+    russianDialogue: 'Sistema: Protocollo Primordiale attivato.'
   - id: 4
-    englishDialogue: 
+    englishDialogue: 'Imo_42: Huh...'
     spanishDialogue: 'IMO_42: Huh...'
-    russianDialogue: 
+    russianDialogue: 'Imo_42: Uffa...'
   - id: 5
-    englishDialogue: 
+    englishDialogue: 'Imo_42: What is this place?'
     spanishDialogue: "IMO_42: \xBFQu\xE9 es este lugar?"
-    russianDialogue: 
+    russianDialogue: "Imo_42: Cos' \xE8 questo luogo?"
   - id: 6
-    englishDialogue: 
+    englishDialogue: 'System: Mission report.'
     spanishDialogue: "SISTEMA: Informe de misi\xF3n."
-    russianDialogue: 
+    russianDialogue: 'Sistema: Rapporto di missione.'
   - id: 7
-    englishDialogue: 
+    englishDialogue: 'System: No data available.'
     spanishDialogue: "SISTEMA: No hay informaci\xF3n."
-    russianDialogue: 
+    russianDialogue: Nessuna informazione.
   - id: 8
-    englishDialogue: 
+    englishDialogue: 'Imo_42: I better scan the place.'
     spanishDialogue: "IMO_42: Ser\xE1 mejor que escanee el lugar."
-    russianDialogue: 
+    russianDialogue: "Imo_42: Sar\xE0 meglio che esamini il luogo.\n\r\n "
   - id: 9
-    englishDialogue: 
+    englishDialogue: "Imo_42: I\u2019m trapped. I need to find a way out of this place."
     spanishDialogue: 'IMO_42: Estoy atrapado. Necesito encontrar la manera de salir.'
-    russianDialogue: 
+    russianDialogue: 'Imo_42: Sono intrappolato. Ho bisogno di trovare un''uscita.'
   - id: 10
-    englishDialogue: 
+    englishDialogue: 'Imo_42: It seems like a map of the planet.'
     spanishDialogue: "Imo: Parece ser un mapa del\r lugar."
-    russianDialogue: 
+    russianDialogue: 'Imo_42: Sembra una mappa del luogo.'
   - id: 11
-    englishDialogue: 
+    englishDialogue: 'Imo_42: There are three points on the map.'
     spanishDialogue: "Imo: Hay tres \xE1reas marcadas."
-    russianDialogue: 
+    russianDialogue: 'Imo_42: Ci sono tre aree contrassegnate.'
   - id: 12
-    englishDialogue: 
+    englishDialogue: 'Sistema: Searching organic life.'
     spanishDialogue: "Sistema: Buscando vida org\xE1nica."
-    russianDialogue: 
+    russianDialogue: 'Sistema: Cercando vita organica.'
   - id: 13
-    englishDialogue: 
+    englishDialogue: 'Sistema: No results.'
     spanishDialogue: "Sistema: La b\xFAsqueda no arrojo\r resultados"
-    russianDialogue: 
+    russianDialogue: 'Sistema: La ricerca non ha prodotto esiti'
   - id: 14
-    englishDialogue: 
+    englishDialogue: "Imo_42: Guess I\u2019m the only thing alive here."
     spanishDialogue: "Imo_42: Supongo que soy la \xFAnica\r\ncosa viva aqu\xED."
-    russianDialogue: 
+    russianDialogue: 'Imo_42: Credo di essere da solo qui. in the map, now what?'
   - id: 15
-    englishDialogue: 
+    englishDialogue: 'Imo_42: This seems like one of the places marked on the map.
+      It looks deactivated.'
     spanishDialogue: "Imo_42: Este debe ser unos de los\r lugares que indica el mapa.\r\nParece
       estar desactivada."
-    russianDialogue: 
+    russianDialogue: "Imo_42: Questo deve essere uno dei pi\xF9 importanti luoghi
+      contrassegnati nella mappa."
   - id: 16
-    englishDialogue: 
+    englishDialogue: 'Imo_42: I guess this is my mission, giving life to this planet'
     spanishDialogue: "Imo_42: Supongo que esta es mi misi\xF3n, regresarle la vida
       a este\r\nplaneta."
-    russianDialogue: 
+    russianDialogue: "mo_42: Credo che questa \xE8 la mia missione; risuscitare questo
+      pianeta."
   - id: 17
-    englishDialogue: 
+    englishDialogue: 'Imo 42: I activated all the points in the map, now what?'
     spanishDialogue: "Imo 42: Ya fui a estos tres\r lugares, \xBFahora qu\xE9?"
-    russianDialogue: 
+    russianDialogue: "Imo 42: Sono gi\xE0 stato a questi tre luoghi. E ora cosa?"
   - id: 18
-    englishDialogue: 
+    englishDialogue: 'Sistema: Data depurated. Playing recording.'
     spanishDialogue: "Sistema: Informaci\xF3n depurada.\r Reproduciendo."
-    russianDialogue: 
+    russianDialogue: Sistema:Si ha fatto il debug delle informazioni. Riproducendo.
   - id: 19
-    englishDialogue: 
+    englishDialogue: "Qetoks: Imo, I\u2019m the General Qetoks, your maker."
     spanishDialogue: "Qetoks: Imo, soy el General\r\nQetoks, t\xFA creador."
-    russianDialogue: 
+    russianDialogue: 'Qetoks: Imo, sono il generale Qetoks, il tuo creatore.'
   - id: 20
-    englishDialogue: 
+    englishDialogue: 'Qetoks: I hope you landed safely. '
     spanishDialogue: "Qetoks: Espero que hayas logrado\r aterrizar sin complicaciones."
-    russianDialogue: 
+    russianDialogue: "Qetoks: Spero che sia atterrato senza  difficolt\xE0"
   - id: 21
-    englishDialogue: 
+    englishDialogue: 'Qetoks: The platet that you are in has the capacity of regenerating
+      itself by activating the pillars that you will find across.'
     spanishDialogue: "Qetoks: El planeta en el que te\r encuentras tiene la capacidad
       de\r\nde regenerarse con tan solo\r inicializar los dinamos que\r\nencontrar\xE1s
       marcados en el mapa."
-    russianDialogue: 
+    russianDialogue: "Qetoks: Il pianeta dove ti trovi ha la capacit\xE0 di\r\nrigenerarsi
+      da solo, inizializzando i generatori che si trovano contrassegnati sulla mappa."
   - id: 22
-    englishDialogue: 
+    englishDialogue: 'Qetoks: After doing that, you must activate the antenna back
+      in the communication center.'
     spanishDialogue: "Qetoks: Despu\xE9s de hacerlo, debes\r activar la antena y regresar
       al\r\npuesto principal."
-    russianDialogue: 
+    russianDialogue: "Qetoks: Dopo farlo, \xE8 necessario attivare l' antenna e tornare
+      alla stazione iniziale."
   - id: 23
-    englishDialogue: 
+    englishDialogue: 'Qetoks: From there you can transmit the signal that will allow
+      us to get there and extract all the organic life from the planet.'
     spanishDialogue: "Qetoks: Desde all\xED podr\xE1s\r transmitir la se\xF1al que
       nos\r\npermitir\xE1 llegar al planeta y\r extraer toda su vida org\xE1nica."
-    russianDialogue: 
+    russianDialogue: "Detoks: Da l\xEC potrai trasmettere il segnale che ci permetter\xE0
+      di raggiungere al pianeta ed estrarre tutta la sua vita organica."
   - id: 24
-    englishDialogue: 
+    englishDialogue: 'Qetoks: The destiny of our species lies in your hands.'
     spanishDialogue: "Qetoks: En tus manos est\xE1 el\r destino de toda nuestra raza."
-    russianDialogue: 
+    russianDialogue: 'Qetoks: Il destino ella nostra intera razza pende dalle tue
+      mani.'
   - id: 25
-    englishDialogue: 
+    englishDialogue: 'Qetoks: Do not fail us.'
     spanishDialogue: 'Qetoks: No nos falles.'
-    russianDialogue: 
+    russianDialogue: 'Qetoks: Non fallisci.'
   - id: 26
-    englishDialogue: 
+    englishDialogue: 'Imo_42: ...'
     spanishDialogue: 'Imo_42: ...'
-    russianDialogue: 
+    russianDialogue: 'Imo_42: ....'
   - id: 27
-    englishDialogue: 
+    englishDialogue: 'Imo_42: So this was my mission all along.'
     spanishDialogue: "Imo_42: As\xED que esta era mi\r misi\xF3n desde el principio."
-    russianDialogue: 
+    russianDialogue: "Imo_42: Cos\xEC questa era la mia missione dall' inizio."
   - id: 28
-    englishDialogue: 
+    englishDialogue: "Imo_42: I don\u2019t want to destroy what i created but, can
+      I really disobey my ordes?"
     spanishDialogue: "Imo_42: No quiero destruir lo que\r he creado, pero, \xBFrealmente
       puedo\r\ndesobedecer mis \xF3rdenes?"
-    russianDialogue: 
+    russianDialogue: 'Imo_42: Non voglio distruggere quello che ho creato. Ma posso
+      davvero disobbedire ai miei ordini?'
