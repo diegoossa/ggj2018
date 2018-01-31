@@ -3,8 +3,9 @@ using UnityEngine;
 
 public class PlayerComments : MonoBehaviour
 {
-
     private RobotController robot;
+    private AudioSource aSource;
+    public AudioClip glitch;
 
     private void Start()
     {
@@ -14,6 +15,8 @@ public class PlayerComments : MonoBehaviour
 
     private IEnumerator StartComments()
     {
+        AudioSource.PlayClipAtPoint(glitch, transform.position, 0.8f);
+
         robot.canMove = false;
 
         yield return new WaitForSeconds(2f);

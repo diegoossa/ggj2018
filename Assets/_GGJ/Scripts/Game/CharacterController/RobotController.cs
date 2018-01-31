@@ -13,6 +13,7 @@ public class RobotController : MonoBehaviour
 
     public AudioClip walk;
 
+
     // System vars
     private bool grounded;
     private Vector3 moveAmount;
@@ -27,6 +28,8 @@ public class RobotController : MonoBehaviour
         rigidBody = GetComponent<Rigidbody>();
         aSource = GetComponent<AudioSource>();
     }
+
+
 
     private void Update()
     {

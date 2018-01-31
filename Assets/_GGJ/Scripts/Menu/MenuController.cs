@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuController : MonoBehaviour {
+public class MenuController : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameObject one;
+    public GameObject two;
+
+    public void Next()
+    {
+        one.SetActive(false);
+        two.SetActive(true);
+    }
 }

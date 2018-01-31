@@ -9,6 +9,9 @@ public class TowerTwoActionZone : ActionZone
 
     public PlayableDirector cinematic;
 
+    public MeshRenderer rend;
+    public Color ToColor;
+
     public override void ActivateZone()
     {
         StartCoroutine(ActivateZoneCoroutine());
@@ -39,6 +42,7 @@ public class TowerTwoActionZone : ActionZone
 
         //yield return new WaitForSeconds(5f);
         //DialogueController.Instance.ShowComment(16);
+        GameManager.Instance.robot.canMove = true;
 
         GameManager.Instance.ActivateTower();
 

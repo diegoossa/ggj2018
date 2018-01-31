@@ -1,5 +1,6 @@
 ﻿
 using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
@@ -26,21 +27,27 @@ public class GameManager : Singleton<GameManager>
 
         if (towersActivated == 1)
         {
+            musicSource.DOFade(0, 1).OnComplete(PlayMusic);
             musicSource.clip = Tower1;
         }
         else if (towersActivated == 2)
         {
+            musicSource.DOFade(0, 1).OnComplete(PlayMusic);
             musicSource.clip = Tower2;
         }
-        else if (towersActivated == 3)
-        {
-            musicSource.clip = Tower3;
-        }
+
 
         if (towersActivated >= 3)
         {
+            musicSource.DOFade(0, 1).OnComplete(PlayMusic);
+            musicSource.clip = Tower3;
             StartCoroutine(WhenActivate3Towers());
         }
+    }
+
+    private void PlayMusic()
+    {
+        musicSource.DOFade(1, 1);
     }
 
     private IEnumerator WhenActivate3Towers()

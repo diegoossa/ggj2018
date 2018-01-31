@@ -31,7 +31,7 @@ public class LocalizatedText : MonoBehaviour
             case "Spanish":
                 text.text = spanishDialogue;
                 break;
-            case "Russian":
+            case "Italian":
                 text.text = russianDialogue;
                 break;
             default:

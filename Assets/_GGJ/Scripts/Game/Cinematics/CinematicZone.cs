@@ -38,7 +38,6 @@ public class CinematicZone : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             onTrigger = true;
-
         }
     }
 
@@ -53,6 +52,7 @@ public class CinematicZone : MonoBehaviour
     private void ShowCinematic()
     {
         GetComponent<BoxCollider>().enabled = false;
+        onTrigger = false;
 
         player.GetComponent<RobotController>().canMove = false;
 

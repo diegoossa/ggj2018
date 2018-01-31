@@ -27,6 +27,7 @@ public class DialogueController : Singleton<DialogueController>
     private string comment;
     private bool completed;
     private bool closePosible;
+    private AudioSource audioSource;
 
     public AudioClip[] talks;
 
@@ -35,6 +36,7 @@ public class DialogueController : Singleton<DialogueController>
         closeOption.SetActive(false);
         dialogueObject.SetActive(false);
         commentObject.SetActive(false);
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void ShowDialogue(string text)
@@ -53,7 +55,11 @@ public class DialogueController : Singleton<DialogueController>
         completed = false;
         closePosible = false;
 
-        AudioSource.PlayClipAtPoint(talks[Random.Range(0, talks.Length)], Vector3.zero);
+
+
+        audioSource.clip = talks[Random.Range(0, talks.Length)];
+        audioSource.Play();
+
 
         switch (GameManager.Instance.currentLanguage)
         {
@@ -63,7 +69,7 @@ public class DialogueController : Singleton<DialogueController>
             case "Spanish":
                 dialogue = dialogues.dialogues[id].spanishDialogue;
                 break;
-            case "Russian":
+            case "Italian":
                 dialogue = dialogues.dialogues[id].russianDialogue;
                 break;
             default:
@@ -76,7 +82,9 @@ public class DialogueController : Singleton<DialogueController>
 
     public void ShowComment(string text)
     {
-        AudioSource.PlayClipAtPoint(talks[Random.Range(0, talks.Length)], Vector3.zero);
+
+        audioSource.clip = talks[Random.Range(0, talks.Length)];
+        audioSource.Play();
 
         commentObject.SetActive(true);
         comment = text;
@@ -85,7 +93,9 @@ public class DialogueController : Singleton<DialogueController>
 
     public void ShowComment(int id)
     {
-        AudioSource.PlayClipAtPoint(talks[Random.Range(0, talks.Length)], GameManager.Instance.player.position);
+
+        audioSource.clip = talks[Random.Range(0, talks.Length)];
+        audioSource.Play();
 
         comment = "";
         commentObject.SetActive(true);
@@ -97,7 +107,7 @@ public class DialogueController : Singleton<DialogueController>
             case "Spanish":
                 comment = dialogues.dialogues[id].spanishDialogue;
                 break;
-            case "Russian":
+            case "Italian":
                 comment = dialogues.dialogues[id].russianDialogue;
                 break;
             default:
@@ -129,6 +139,8 @@ public class DialogueController : Singleton<DialogueController>
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            //Debug.Log(JsonUtility.ToJson(dialogues));
+
             if (closePosible)
             {
                 dialogueObject.SetActive(false);

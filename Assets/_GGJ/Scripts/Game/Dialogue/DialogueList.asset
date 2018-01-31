@@ -45,7 +45,7 @@ MonoBehaviour:
   - id: 7
     englishDialogue: 'System: No data available.'
     spanishDialogue: "SISTEMA: No hay informaci\xF3n."
-    russianDialogue: Nessuna informazione.
+    russianDialogue: 'Sistema: Nessuna informazione.'
   - id: 8
     englishDialogue: 'Imo_42: I better scan the place.'
     spanishDialogue: "IMO_42: Ser\xE1 mejor que escanee el lugar."
